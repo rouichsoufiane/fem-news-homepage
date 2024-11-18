@@ -1,0 +1,29 @@
+$-clr-offWhite: hsl(36, 100%, 99%);
+$-clr-gray-100: hsl(233, 8%, 79%);
+$-clr-gray-200: hsl(236, 13%, 42%);
+$-clr-gray-300: hsl(240, 100%, 5%);
+$-clr-orange: hsl(35, 77%, 62%);
+$-clr-red: hsl(5, 85%, 63%);
+
+// map for the colors
+$colors: (
+	"neutral": (
+		"000": $-clr-offWhite,
+		"100": $-clr-gray-100,
+		"200": $-clr-gray-200,
+		"300": $-clr-gray-300,
+	),
+	"primary": (
+		"100": $-clr-orange,
+		"200": $-clr-red,
+	),
+);
+
+// contextual color tokens
+$color-neutral-000: var(--neutral-000);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+
+$color-primary-100: var(--primary-100);
+$color-primary-200: var(--primary-200);

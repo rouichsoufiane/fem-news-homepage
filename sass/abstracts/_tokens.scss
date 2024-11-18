@@ -1,0 +1,89 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "sizes" as *;
+
+// Contextual
+$color-text-default: $color-neutral-200;
+$color-background-default: $color-neutral-000;
+
+// set to 0 to disable
+$letter-spacing-loose: 0;
+
+$border-radius-0: 0; // in this project i want my button to not have border radius
+$border-radius-1: $size-2;
+$border-radius-2: $size-4;
+
+// body
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-body;
+$body-line-height: 1.5;
+$body-font-weight: $font-weight-default;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+$heading-font-family: $font-family-base;
+$heading-color-default: $color-neutral-200;
+$heading-font-weight: $font-weight-bold;
+$heading-letter-spacing: $letter-spacing-loose;
+$heading-line-height: 1.1;
+$heading-text-transform: inherit;
+
+$heading-1-font-size: $font-size-xl;
+$heading-1-color: $color-neutral-300;
+$heading-2-font-size: $font-size-l;
+$heading-2-color: $color-primary-100;
+$heading-3-font-size: $font-size-m;
+$heading-3-color: $color-primary-200;
+$heading-4-font-size: $font-size-s;
+$heading-4-color: $color-neutral-000;
+$heading-5-font-size: $font-size-xs;
+$heading-5-color: $color-neutral-300;
+
+// buttons
+$button-font-family: $body-font-family;
+$button-font-size: $body-font-size;
+$button-font-weight: $font-weight-bold;
+$button-text-transform: uppercase;
+$button-padding: 0.95em 2em;
+$button-border: 0;
+$button-border-radius: $border-radius-0;
+
+$button-accent-color: $color-neutral-100;
+$button-accent-background: $color-primary-200;
+$button-accent-color-hover: $color-neutral-100; // in this project i don't have accent color and i don't have accent buttons
+$button-accent-background-hover: $color-primary-100;
+$button-primary-color: $color-neutral-300;
+$button-primary-background: $color-primary-200;
+$button-primary-color-hover: $color-neutral-000;
+$button-primary-background-hover: $color-neutral-300;
+
+// layout
+$grid-gap: $size-6;
+$flex-group-gap: $size-4;
+
+$hero-padding-block: clamp(15rem, 15vh, 20rem);
+$section-padding-block: clamp(5rem, 10vh, 6rem);
+
+$container-min-margin-inline: $size-4; // 1rem
+$container-max-width: 64rem; // 1024px
+$container-max-width-narrow: 40rem; // 640px
+$container-max-width-wide: 75rem; // 1200px
+
+// site header
+$site-header-background-color: $color-neutral-000;
+$site-header-color: $color-neutral-100;
+$site-header-padding: $size-8 0;
+$site-header-margin: 0;
+$site-header-jusitifcation-small-screens: center;
+$site-header-jusitifcation-large-screens: space-between;
+$site-header-alignment: center;
+
+//navigation
+$navigation-color-mobile: $color-neutral-300; // i added this line because the color in navbar mobile is different then when in desktop mode
+$navigation-color: $site-header-color;
+$navigation-color-hover: $color-primary-200;
+$navigation-font-size: $font-size-nav;
+$navigation-gap: $size-9;
+$navigation-link-text-decoration: none;
+$navigation-font-family: $body-font-family;
+$navigation-font-weight: $body-font-weight;

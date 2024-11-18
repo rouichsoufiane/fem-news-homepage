@@ -1,0 +1,29 @@
+@use "functions" as *;
+
+$font-family-base: "Inter", sans-serif;
+
+$font-sizes: (
+	"xl": clamp(rem(40), 2.147887323943662rem + 1.5023474178403755vw, rem(56)),
+	"l": clamp(rem(32), 1.823943661971831rem + 0.7511737089201878vw, rem(40)),
+	"m": rem(32),
+	"s": rem(20),
+	"xs": rem(18),
+	"body": rem(15),
+	"nav": rem(14),
+);
+
+$font-size-xl: var(--fs-xl);
+$font-size-l: var(--fs-l);
+$font-size-m: var(--fs-m);
+$font-size-s: var(--fs-s);
+$font-size-xs: var(--fs-xs);
+$font-size-body: var(--fs-body);
+$font-size-nav: var(--fs-nav);
+
+$-fw-400: 400;
+$-fw-700: 700;
+$-fw-800: 800;
+
+$font-weight-default: $-fw-400;
+$font-weight-bold: $-fw-700;
+$font-weight-extra-bold: $-fw-800;

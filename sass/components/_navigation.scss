@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.nav {
+	--flex-column-gap: #{$navigation-gap};
+	list-style: none;
+	font-family: $navigation-font-family;
+	font-weight: $navigation-font-weight;
+
+	a {
+		color: $navigation-color-mobile;
+		text-decoration: $navigation-link-text-decoration;
+
+		@include mq(medium) {
+			color: $navigation-color;
+		}
+
+		&:is(:hover, :focus) {
+			color: $navigation-color-hover;
+		}
+	}
+}
