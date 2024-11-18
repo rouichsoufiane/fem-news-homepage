@@ -1,4 +1,4 @@
-import "./sass/main.scss";
+// import "./sass/main.scss";
 
 // trigger the nav
 const navToggle = document.querySelector(".nav-toggle");
